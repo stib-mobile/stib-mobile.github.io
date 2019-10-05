@@ -28,7 +28,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
   
-  
+    display: none
 }
 .container_header .menu{
   display: -webkit-box;
@@ -73,9 +73,9 @@
 
 /* app-main */
 .main_app{
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
 .box{ text-align: center ;
@@ -110,18 +110,6 @@
     max-width: 540px;
     font-size: 20px;
     text-align: center
-}
-/* show_video download */
-.video-btn{
-    background-color: #fdcb6e;
-    font-size: 22px;
-    /* padding: 17px; */
-    width: 60px;
-    height: 60px;
-}
-.video-btn iframe{
-    position: fixed ;
-    width: 500px
 }
 /* ///////////////////////////////////////////////////////////////////////////// */
 /* bottom */
@@ -280,13 +268,10 @@
     }
    
     .container_header .logo{
-        display: flex!important
+        display: flex
     }
   .menu_show ul li a:hover{
       color: #ff9f1a
-  }
-  .circle{
-      display: none
   }
     
 }

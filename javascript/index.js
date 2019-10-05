@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     var header_top = $('#header').offset().top + 60;
     console.log(header_top)
     
@@ -38,10 +37,10 @@ $(document).ready(function () {
         //     video_main.pause();
         // }
         // /////// page 1
-        if(header_top > 200 &&   $(window).width() > 1000){
+        if(header_top > 200){
             $("#logo-header").fadeIn("slow")
 
-        }else if(  $(window).width() > 1000){
+        }else{
             $("#logo-header").fadeOut("slow")
 
         }

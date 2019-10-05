@@ -1,0 +1,17 @@
+.dowload ul li{
+    margin-bottom: 10px ; text-align: initial
+}
+.dowload ul li img{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px ;
+    margin-right: 10px
+}
+.dowload .title{
+    padding-left: 100px
+}
+.dowload ul {
+    text-align: left
+}
+/* video */
+

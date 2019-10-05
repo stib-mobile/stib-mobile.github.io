@@ -1,0 +1,73 @@
+/*   layout for web with 4 section  */
+body{
+    font-family: Poppins, sans-serif!important; 
+    
+}
+.page-holder{
+    background-color: #ffffff
+}
+a{
+    text-decoration: none ; color: white;
+}
+a:hover{
+    text-decoration: none ; 
+}
+*{
+    padding: 0px ; margin: 0px ; text-align: center
+}
+p{
+  text-align: center
+    
+}
+ul{
+    margin: 0px
+}
+li{
+    list-style: none;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 70px
+}
+h1,h2,h3,h4{
+    font-family: 'Poppins', sans-serif;
+}
+.about_app, .app_provide , .dowload_divice {
+    padding: 113px 0px 120px 0px ; 
+}
+/* header  */
+.header{
+    transition: 0.5s all;
+       padding: 10px 0px; position: fixed; width: 100%;z-index: 2; -webkit-transform: 2s ease all; -ms-transform: 2s ease all; transform: 2s ease all
+}
+.section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex ; -webkit-box-align: center ; -ms-flex-align: center ; align-items: center ; -webkit-box-pack: center ; -ms-flex-pack: center ; justify-content: center ; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column ; flex-direction: column ; ;   
+     font-family: "Poppins", sans-serif;    margin-bottom: 80px ;    text-align: justify
+}
+.section-title p{
+    color: #747d8c ; line-height: 26px;
+    margin: 0 auto;font-size: 16px;
+}
+.section-title .subtitle{
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+   
+}
+
+
+
+/*    */
+
+@media(max-width:1000px){
+    h1{
+        font-size: 47px; 
+    }
+}

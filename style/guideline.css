@@ -1,0 +1,118 @@
+.dowload{
+    max-width: 100%;
+}
+.dowload .page1, .page2, .page3{
+   padding: 100px 15px
+}
+.dowload .page1{
+    color:black;
+}
+.dowload .page2{
+    color: white
+}
+
+
+.dowload .title h1{     
+    font-size: 46px;
+    font-weight: bold;
+    -webkit-letter-spacing: -0.02em;
+    -moz-letter-spacing: -0.02em;
+    -ms-letter-spacing: -0.02em;
+    letter-spacing: -0.02em;
+    line-height: 49px;
+    margin: 0;
+    text-transform:  uppercase;
+    padding-bottom: 10px ;
+    color: #ffa502
+}
+.dowload .title p{
+    font-size: 16px;
+    line-height: 26px; 
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box 
+}
+/*  */
+.dowload_divice{
+    background-color: #1e90ff ;
+    color: white; 
+}
+.line-after::after{
+    content: '';
+    text-align: center;
+    background: #ffa502;
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 10px auto 15px auto;
+}
+.line-after2::after{
+    content: '';
+    text-align: center;
+    background: black ;
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 10px auto 15px auto;
+}
+.dowload_divice .store a img   {
+     margin: 30px ;
+     margin-bottom: 20px
+}
+/* step */
+.dowload .page1, .page3 .title ul li{
+    color: black ; text-align: left  ;
+}
+.dowload .page2 .title ul li img{
+    background-color: white
+}
+/* ressponsive */
+@media(max-width:1200px){
+  .dowload img{
+      width: 30%
+  }
+  
+}
+
+@media(max-width:1000px){
+    .dowload .title h1{
+        font-size: 46px;
+        font-weight: bold;
+        -webkit-letter-spacing: -0.02em;
+        -moz-letter-spacing: -0.02em;
+        -ms-letter-spacing: -0.02em;
+        letter-spacing: -0.02em;
+        line-height: 49px;
+    }
+.dowload .title {
+    padding: 30px 30px 30px 100px;
+}
+   
+}
+@media(max-width:768px){
+    .dowload .page1, .page2,.page3{
+        -webkit-box-orient: vertical!important ;
+        -webkit-box-direction: normal!important ;
+            -ms-flex-direction: column!important ;
+                flex-direction: column!important ; padding-bottom: 100px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center
+    }
+
+    .dowload .title h1{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .dowload .page1, .page3{
+        -webkit-box-orient: vertical!important;
+        -webkit-box-direction: reverse!important;
+            -ms-flex-direction: column-reverse!important;
+                flex-direction: column-reverse!important
+    }
+    .dowload img{
+        width: 50%
+    }
+}
+@media(max-width:550px){
+    .dowload .title {
+        padding: 30px 30px 30px 30px;
+    }
+       
+}

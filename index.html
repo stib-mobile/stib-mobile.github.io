@@ -27,7 +27,6 @@
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/guideline.css">
 	<link rel="stylesheet" href="style/aboutapp-app-provide.css">
-	<link rel="stylesheet" href="style/video-mockup.css">
 
 </head>
 
@@ -61,7 +60,7 @@
 			<div class="container_header  d-flex flex-row align-items-center justify-content-space-between ">
 				<div class="logo" id="logo-header">
 					<a href="https://stib.co/">
-						<img src="images/background/LogoStiB.png" style="width: auto; height: 40px" />
+						<img src="images/svg/logo.svg" style="width: auto; height: 40px" />
 					</a>
 				</div>
 				<div></div>
@@ -102,7 +101,7 @@
 				<!-- </div> -->
 				<div class="app_sub">
 					<div class="circle">
-						<div class="circle1"><img src="images/background/LogoStiB.png" alt=""></div>
+						<div class="circle1"><img src="images/svg/logo.svg" alt=""></div>
 					</div>
 					<h1 style="color: #ffffff;text-transform: uppercase" class="line-after">Simply a better digital
 						exchange</h1>
@@ -114,17 +113,43 @@
 							</a>
 							<span style="color: #ffffff;font-size: 30px;
 							line-height: 40px;">OR</span>
-							<a> <img width="200" height="auto" style="background-color: aliceblue; border-radius: 12px"
-									src="./images/background/apk-androi.png"></a>
-						</div>
-						<div class="androi ">
-							<a>
+							<a title="COMING SOON">
 								<img width="200" height="auto" src="images/background/Apple-App-Store-logo.jpg">
 							</a>
+							<!-- Button trigger modal -->
+							<button type="button" class="video-btn rounded-circle" data-toggle="modal"
+								data-target="#modelId">
+								<i class="fas fa-play"></i>
+							</button>
+
+							<!-- Modal -->
+							<div class="modal fade" id="modelId" tabindex="-1" role="dialog"
+								aria-labelledby="modelTitleId" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-body">
+											<div id="video_show_bg">
+												<video class="video" loop="-1" width="100%" height="auto" id="video"
+													muted>
+													<source src="images/video/huongdan.mp4" type="video/mp4">
+													<source src="images/video/huongdan.ogg" type="video/ogg">
+													<source src="images/video/huongdan.webm" type="video/webm">
+												</video>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <a > <img width="200" height="auto"
+									style="background-color: aliceblue; border-radius: 12px"
+									src="./images/background/apk-androi.png"></a> -->
+						</div>
+						<!-- <div class="androi ">
+
 							<span style="color: #ffffff;font-size: 30px;
 							line-height: 40px;">(COMING SOON)</span>
 							<div>&emsp;</div>
-						</div>
+						</div> -->
 
 					</div>
 				</div>
@@ -155,8 +180,8 @@
 							<p>For trading and lending as well as insuring and investing with our global P2p
 								networks<br>&emsp;</p>
 						</div>
-						<div class="learn-more">
-							<a href="http://charity.stib.co"> Learn more</a>
+						<div>
+							<a href="http://charity.stib.co"> Learn more P2P</a>
 						</div>
 					</li>
 					<li class="col-md-6 col-lg-3">
@@ -168,8 +193,8 @@
 							<p>The goal is to build a self-sustainable and self-sufficient model of an amazing community
 								to be replicated globally</p>
 						</div>
-						<div class="learn-more">
-							<a href="http://charity.stib.co"> Learn more</a>
+						<div>
+							<a href="http://charity.stib.co"> Learn more Charity</a>
 						</div>
 					</li>
 					<li class="col-md-6 col-lg-3">
@@ -181,8 +206,8 @@
 							<p>For spending at our partners on deep discounts and earn rewards through your
 								trading/lending/investing</p>
 						</div>
-						<div class="learn-more">
-							<a href="http://charity.stib.co"> Learn more</a>
+						<div>
+							<a href="http://charity.stib.co"> Learn more Rewards</a>
 						</div>
 					</li>
 					<li class="col-md-6 col-lg-3">
@@ -194,8 +219,8 @@
 							<p>We will initially begin Artificial Intelligence with AI Chat to assist with trading and
 								lending<br>&emsp;</p>
 						</div>
-						<div class="learn-more">
-							<a href="http://charity.stib.co"> Learn more</a>
+						<div>
+							<a href="http://charity.stib.co"> Learn more StiB AI</a>
 						</div>
 					</li>
 				</ul>
@@ -255,7 +280,10 @@
 							</div>
 							<div class="content">
 								<h3>Convenience</h3>
-								<h4>Available 200<sup>+</sup> countries + 10 most popular languages<br>&nbsp<br>&nbsp
+								<h4 style="text-align: left">Easy to use <br>
+									Beautiful <br>
+									Simple <br>
+									Available 200<sup>+</sup> countries + 10 most popular languages
 								</h4>
 							</div>
 						</div>
@@ -301,21 +329,12 @@
 						</ul>
 					</div>
 					<div style="padding-top: 40px" class="col-lg-7 col-md-12">
-						<div class="wrapper-video-trading">
-							<div class="mockup-iphone">
-								<div class="top-left-hide hide-corner"></div>
-								<div class="top-right-hide hide-corner"></div>
-								<div class="bottom-left-hide hide-corner"></div>
-								<div class="bottom-right-hide hide-corner"></div>
-								<img src="images/video/mockupIphone.png" alt="" class="img-fluid">
-							</div>
-							<video class="video" loop="-1" width="30%" height="auto" id="video1" muted>
-								<source src="images/video/videoplayback.mp4" type="video/mp4">
-								<!-- <source src="images/video/huongdan.ogg" type="video/ogg">
-								<source src="images/video/huongdan.webm" type="video/webm"> -->
-							</video>
-						</div>
+						<video class="video" loop="-1" width="30%" height="auto" id="video1" muted>
 
+							<source src="images/video/videoplayback.mp4" type="video/mp4">
+							<!-- <source src="images/video/huongdan.ogg" type="video/ogg">
+							<source src="images/video/huongdan.webm" type="video/webm"> -->
+						</video>
 					</div>
 
 				</div>
@@ -326,20 +345,11 @@
 					style="background-color: #F38320;">
 
 					<div style="padding-top: 40px" class="col-lg-7 col-md-12">
-						<div class="wrapper-video-trading">
-							<div class="mockup-iphone">
-								<div class="top-left-hide hide-corner" style="background: #F38320"></div>
-								<div class="top-right-hide hide-corner" style="background: #F38320"></div>
-								<div class="bottom-left-hide hide-corner" style="background: #F38320"></div>
-								<div class="bottom-right-hide hide-corner" style="background: #F38320"></div>
-								<img src="images/video/mockupIphone.png" alt="" class="img-fluid">
-							</div>
-							<video class="video" loop="-1" width="30%" height="500px" id="video2" muted>
-								<source src="images/video/videoplayback2.mp4" type="video/mp4">
-								<!-- <source src="images/video/huongdan.ogg" type="video/ogg">
+						<video class="video" loop="-1" width="30%" height="500px" id="video2" muted>
+							<source src="images/video/videoplayback2.mp4" type="video/mp4">
+							<!-- <source src="images/video/huongdan.ogg" type="video/ogg">
 							<source src="images/video/huongdan.webm" type="video/webm"> -->
-							</video>
-						</div>
+						</video>
 					</div>
 
 					<div class="title col-lg-5 col-md-12">
@@ -473,6 +483,16 @@
 	<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
 	<!-- file javascipt -->
 	<script type="text/javascript" src="javascript/index.js"></script>
+	<!-- thư viên js của bootstrap 4 -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 	<script>
 
 	</script>

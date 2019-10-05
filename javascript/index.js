@@ -1,6 +1,6 @@
 $(document).ready(function () {
+
     var header_top = $('#header').offset().top + 60;
-    console.log(header_top)
     
 
     if (header_top > 60) {
@@ -37,13 +37,11 @@ $(document).ready(function () {
         //     video_main.pause();
         // }
         // /////// page 1
-        if(header_top > 200){
-            $("#logo-header").fadeIn("slow")
-
-        }else{
-            $("#logo-header").fadeOut("slow")
-
-        }
+        // if(header_top > 200 && $(window).width() > 1000){
+        //     $("#logo-header").fadeIn("slow")
+        // } else if($(window).width() > 1000){
+        //     $("#logo-header").fadeOut("slow")
+        // }
 
         if ((header_top + 300) > video_1 && header_top <= (video_1 + 50)) {
  
@@ -185,4 +183,8 @@ $(document).ready(function () {
         } else {
             $("#photo_animation").css("animation-play-state", "paused")
         }
+        // video play
+        $("#show_video_download").click(function(){
+            $("#video").show()
+        })
 });

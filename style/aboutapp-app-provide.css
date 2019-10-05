@@ -1,102 +1,66 @@
 /* about app */
 
-.about_app .content ul li {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 55px;
-    transition: 0.3s;
-    position: relative;
+.about_app .content ul li{
+ text-align: center ; padding-top: 10px ; padding-bottom: 10px;transition: 0.3s
 }
-
-.about_app .content ul h4 {
-    font-size: 21px;
-    padding-bottom: 20px;
-    color: #8FC641;
-    font-weight: bolder;
-    padding-top: 30px;
-    text-transform: uppercase;
+.about_app .content ul h4{
+    font-size: 28px;padding-bottom: 20px ; color: #8FC641   ; font-weight: bolder  ; padding-top: 30px
 }
+.about_app .content ul li:hover{
+    -webkit-box-shadow: 0 0 35px rgba(0,0,0,.1);
+    box-shadow: 0 0 35px rgba(16, 16, 16, 0.67);
 
-.about_app .content ul li:hover {
-    -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, .1);
-    box-shadow: 0 0 35px rgba(16, 16, 16, 0.12);
-    transform: translateY(-7px);
+            transform: translateY(-10px);
+            
+} 
+.about_app .content .icon{
+    padding-bottom: 40px;padding: 10px;
 }
-
-.about_app .content .icon {
-    padding-bottom: 40px;
-    padding: 10px;
+.about_app .content .icon img{
+   
+    width: 100px ; height:  100px;
 }
-
-.about_app .content .icon img {
-    width: 100px;
-    height: 100px;
-}
-
-.about_app .content ul li strong {
+.about_app .content ul li strong{
     font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2); 
     color: #b06ab3;
     display: block;
 }
-
-.about_app .content ul li p {
-    margin-bottom: 30px;
-    font-size: 15px;
+.about_app .content ul li p{
+    margin-bottom: 30px
 }
-
-.about_app .content ul li a {
+.about_app .content ul li a{
     margin-top: 20px;
-    color: #fff;
-    font-size: 14px;
-    padding: 12px 10px;
-    text-transform: uppercase;
-    background: #f38320;
-    border: 1px solid transparent;
-    transition: .3s;
-}
+    color: #fa983a ;
+    font-size: 25px ;
 
-.about_app .content ul li a:hover {
-    text-decoration: none;
-    color: #f38320;
-    background: transparent;
-    border: 1px solid #f38320;
-}
+    padding: 10px
 
-.learn-more {
-    position: absolute;
-    bottom: 38px;
-    left: 50%;
-    transform: translateX(-50%);
+}
+.about_app .content ul li a:hover{
+    text-decoration: none
 }
 
 /* ////////////////////////////////////////////////////////////////////////////// */
-
 /* why choose app  */
-
 /* app-provide */
-
-.app_provide {
-    background-color: #F38320;
-    color: white
-}
-
-.app_provide * {
+.app_provide{
+  background-color: #F38320; color: white 
+} 
+.app_provide *{
     text-align: center
 }
-
-.app_provide .photo {
+.app_provide .photo{
     -webkit-transition: all 0.5s ease-in;
     -o-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
-    -webkit-animation: fadeInUp 1s;
-    animation: fadeInUp 1s;
+    -webkit-animation: fadeInUp 1s ;
+            animation: fadeInUp 1s ;
     -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-    height: 100%;
-    width: 700px;
-    padding-left: 20px;
-    padding-right: 20px
+            animation-play-state: paused;
+    height: 100%; width: 700px ;
+    padding-left: 20px ; padding-right: 20px
+    
 }
 
 .app_provide .detail {
@@ -108,97 +72,65 @@
     -o-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
     -webkit-animation: fadeInUp 1s;
-    animation: fadeInUp 1s;
+            animation: fadeInUp 1s;
     text-align: justify;
     -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+            animation-play-state: paused;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+        
 }
-
-.app_reason {
+.app_reason{
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    display: flex ; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row ; flex-direction: row ; -ms-flex-pack: distribute; justify-content: space-around ; -webkit-box-align: center; -ms-flex-align: center; align-items: center
 }
-
-.app_provide .detail:hover {
-    background-color: #8fc641;
+.app_provide .detail:hover{
+    background-color: #8fc641 ;
     color: #10102d
 }
-
-.app_reason img {
-    width: 90%;
-    height: 90%;
+.app_reason img{
+    width:90%; height: 90%;
 }
-
-.app_provide .detail h1 {
+.app_provide .detail h1{
     text-transform: uppercase;
 }
-
-.app_provide .detail .content {
+.app_provide .detail .content{
     padding-top: 20px
 }
+.app_provide .detail h3{
 
-.app_provide .detail h3 {
     padding: 15px 0px 10px 0px
 }
-
-.app_provide .detail .icon img {
-    width: 40px;
-    height: 40px;
+.app_provide .detail .icon img{
+    width: 40px ; height: 40px;
 }
-
-@media(max-width: 1200px) {
-    .app_provide .photo {
+@media(max-width: 1200px){
+    .app_provide .photo{
         height: 100%;
         width: 100%;
         padding: 30px
     }
 }
-
-@media(max-width: 1000px) {
-    .app_reason {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center
-    }
-    .app_reason img {
-        margin-bottom: 30px
-    }
+@media(max-width: 1000px){
+.app_reason{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex ; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column ; flex-direction: column ; -ms-flex-pack: distribute; justify-content: space-around ; -webkit-box-align: center; -ms-flex-align: center; align-items: center
+}
+.app_reason img{
+   margin-bottom: 30px
 }
 
-@media(max-width: 768px) {
-    .about_app .content ul li:not(:last-child) {
-        border-bottom: 1px solid #F38320;
-    }
 }

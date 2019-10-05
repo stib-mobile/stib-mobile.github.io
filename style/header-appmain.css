@@ -27,7 +27,7 @@
 .container_header .logo{
     display: -webkit-box;
     display: -ms-flexbox;
-  
+  display: none
   
 }
 .container_header .menu{
@@ -256,10 +256,10 @@
         margin-right: 5px; border-right: white 1px solid ; padding-right: 5px ; display: -webkit-box; display: -ms-flexbox; display: flex ; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column ; flex-direction: column ; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end ; height: 110px;
     }
     .menu_show .sub_menu ul li{
-        margin-top: 5px
+        margin-top: 5px;
     }
     .active{
-        color: #ff9f1a
+        color: #ff9f1a;
     }
 }
 @media(max-width: 1200px){
@@ -339,4 +339,5 @@
     .app_sub .store .androi img{
         width: 120px; height: auto;
     }
+}
 }

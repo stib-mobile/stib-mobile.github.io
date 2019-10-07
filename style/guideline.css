@@ -104,19 +104,19 @@
         -ms-letter-spacing: -0.02em;
         letter-spacing: -0.02em;
         line-height: 49px;
-        text-align: center!important;
+        /* text-align: center!important; */
     }
     .dowload .title {
         padding: 30px;
     }
-    .line-after::after, .line-after2::after{
+    /* .line-after::after, .line-after2::after{
         margin: 15px auto!important;
-    }
-    .dowload ul li{
-        text-align: center!important;
-    }
+    } */
     .page2 h1.line-after2, .page1 h1.line-after{
         margin-top: 15px;
+    }
+    .page2 .line-after2::after{
+        margin: 15px auto!important;
     }
 }
 

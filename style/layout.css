@@ -53,21 +53,22 @@ h1,h2,h3,h4{
 }
 .section-title .subtitle{
     line-height: 30px;
-    text-transform: uppercase;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     display: block;
     margin-bottom: 10px;
     font-size: 17px;
-   
+    text-transform: capitalize;
 }
-
-
-
-/*    */
 
 @media(max-width:1000px){
     h1{
         font-size: 47px; 
+    }
+}
+@media(max-width: 435px){
+    .section-title .subtitle{
+        font-weight: 100;
+        font-size: 14px;
     }
 }

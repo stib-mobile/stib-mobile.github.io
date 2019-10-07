@@ -378,7 +378,13 @@
 /* responsive */
 @media (min-width: 1000px){
     #logo-header{
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s;
+    }
+    #logo-header.active{
+        visibility: visible;
+        opacity: 1;
     }
 }
 @media (max-width:1000px) {

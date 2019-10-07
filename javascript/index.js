@@ -83,7 +83,9 @@ $(document).ready(function () {
         //     video3.pause();
         // }
         // //////////////////////////////////////////////////////////////////////////////////////////////////// change background color for header
+
         // NOTE của Định: Làm vậy để chi ? // 
+
         // if (header_top == 60) {
         //     $("#change-color ul li a").css("color", "white")
 
@@ -99,9 +101,11 @@ $(document).ready(function () {
 
         if(vitrihientai > 100){
             $('#header').addClass('bg-active');
+            $('#logo-header').addClass('active');
         }
         else{
             $('#header').removeClass('bg-active');
+            $('#logo-header').removeClass('active');
         }
         if(vitrihientai > 300){
             $('#to-top').addClass('active');

@@ -1,5 +1,22 @@
 /* about app */
-
+.page2 .title ul li{
+    color: #fff;
+}
+.page2 .line-after2{
+    color: #f38320;
+}
+.page1 .line-after{
+    text-align: right!important;
+}
+.page1 .title ul li{
+    text-align: right;
+}
+.about_app .title, .app_provide .title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 50px;
+}
 .about_app .content ul li {
     text-align: center;
     padding-top: 10px;
@@ -77,12 +94,16 @@
 /* app-provide */
 
 .app_provide {
-    background-color: #F38320;
-    color: white
+    background-color: #191919;
+    color: white;
 }
 
 .app_provide * {
     text-align: center
+}
+
+.app_provide .detail h4 {
+    font-size: 16px;
 }
 
 .app_provide .photo {
@@ -100,13 +121,14 @@
 }
 
 .app_provide .detail {
+    min-height: 235px;
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
     padding: 20px 17px 15px 20px;
     margin-bottom: 30px;
-    -webkit-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
     -webkit-animation: fadeInUp 1s;
     animation: fadeInUp 1s;
     text-align: justify;
@@ -143,8 +165,8 @@
 }
 
 .app_provide .detail:hover {
-    background-color: #8fc641;
-    color: #10102d
+    background-color: #fa983a;
+    color: #fff;
 }
 
 .app_reason img {
@@ -161,7 +183,9 @@
 }
 
 .app_provide .detail h3 {
-    padding: 15px 0px 10px 0px
+    padding: 15px 0px 10px 0px;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
 .app_provide .detail .icon img {

@@ -11,18 +11,12 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
 
-
-
 	<!-- Thư viện fontawesome all: -->
 	<link rel="stylesheet" href="fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
 	<!-- CSS: -->
 	<link rel="stylesheet" href="style/layout.css">
-
 	<link rel="stylesheet" href="style/animation.css">
-
 	<link rel="stylesheet" href="style/header-appmain.css">
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/guideline.css">
@@ -34,30 +28,13 @@
 <body>
 
 	<!-- page holder -->
+	<div class="back-to-top" style="display: block;" id="to-top">
+		<i class="fas fa-angle-up"></i>
+	</div>
 	<div class="page-holder" style="overflow-x: hidden;">
+		
 		<!-- start  header  -->
 		<div class="header" id="header">
-			<!--  responsive mobile app -->
-			<div class="menu_show" id="menu_show">
-				<div id="menu_show_icon_close">
-					<img src="images/background/close-button (1).png">
-				</div>
-				<div class="sub_menu">
-					<div id="login"> <a href="https://stib.co/index.php?lang=vn" id="login" target="_blank">LOGIN</a>
-					</div>
-
-					<ul>
-						<li><a href="https://stib.co/index.php?lang=vn" class="active" target="_blank">HOME</a> </li>
-						<li><a href="https://stib.co/index.php?lang=vn&showpage=contacts" target="_blank">CONTACT US</a>
-						</li>
-						<li><a href="https://stib.co/index.php?lang=vn&showpage=careers" target="_blank">CAREERS</a>
-						<li><a href=" http://charity.StiB.co" target="_blank">CHARITY</a>
-					</ul>
-				</div>
-
-			</div>
-			<!-- end of responsive header for mobile app show -->
-
 			<div class="container_header  d-flex flex-row align-items-center justify-content-space-between ">
 				<div class="logo" id="logo-header">
 					<a href="https://stib.co/">
@@ -67,16 +44,18 @@
 				<div></div>
 				<!-- icon for reponsive mobile open menu -->
 				<div id="icon_menu">
-					<i class="fas fa-bars fa-2x" style="color: #ff9f1a; font-size: 20px " id="icon_menu1"></i>
-
+					<i class="fas fa-bars fa-2x" style="color: #ff9f1a; font-size: 20px;" id="icon_menu1"></i>
+				</div>
+				<div id="icon_menu_close">
+					<img src="images/svg/cross-out.svg" alt="" class="img-fluid">
 				</div>
 				<!-- menu -->
 				<div class="sub_menu" id="change-color">
 					<ul>
-						<li><a href="https://stib.co/index.php?lang=vn" target="_blank">HOME</a> </li>
-						<li><a href="https://stib.co/index.php?lang=vn&showpage=contacts" target="_blank">CONTACT US</a>
+						<li><a href="https://stib.co/index.php?lang=vn" class="" target="_blank">HOME</a> </li>
+						<li><a href="https://stib.co/index.php?lang=vn&showpage=contacts" class="" target="_blank">CONTACT US</a>
 						</li>
-						<li><a href="https://stib.co/index.php?lang=vn&showpage=careers" target="_blank">CAREERS</a>
+						<li><a href="https://stib.co/index.php?lang=vn&showpage=careers" class="" target="_blank">CAREERS</a>
 						</li>
 
 					</ul>
@@ -89,39 +68,37 @@
 		<!-- introduce StiB APP -->
 		<div class="main_app">
 			<div class="box d-flex flex-row justify-content-space-between">
-				<!--  -->
-				<!-- <div class="circle">
-					<div class="circle1"><img src="images/background/blockchain.png" alt=""></div>
-					<div class="circle2"><img src="images/background/blockchain.png"
-							style="width: 80% ; height: 60%" alt=""></div> -->
-
-				<!-- <div class="circle2"><img src="images/background/blockchain.png"
-										style="width: 80% ; height: 60%" alt=""></div> -->
-				<!-- <div class="circle3"><img src="images/background/main-banner3 (2).png" style="width: 60% ; height: 60%"
-							alt=""></div> -->
-				<!-- </div> -->
 				<div class="app_sub">
 					<div class="circle">
 						<div class="circle1"><img src="images/svg/logo.svg" alt=""></div>
 					</div>
-					<h1 style="color: #ffffff;text-transform: uppercase" class="line-after">Simply a better digital
+					<h1 class="line-after">Simply a better digital
 						exchange</h1>
-					<p style="color: #f1f2f6">Commissions free Trading/Lending on StiB's smart contracts</p>
+					<p style="color: #333">Commissions free Trading/Lending on StiB's smart contracts</p>
 					<div class="store d-flex flex-column">
-						<div class="androi" style="margin-bottom: 60px"> <a
-								href="images/apk/stib-app-6a04a0e316394e809bdfa744e132db70-signed.apk" target="_blank">
-								<img width="200" height="auto" src="images/background/app-store-android.png">
-							</a>
-							<span style="color: #ffffff;font-size: 30px;
-							line-height: 40px;">OR</span>
+						<div class="androi" style="margin-bottom: 60px">
+							<div class="wrapper-link-android">
+								<a href="images/apk/stib-app-6a04a0e316394e809bdfa744e132db70-signed.apk"
+									target="_blank">
+									<img width="200" height="auto" src="images/background/app-store-android.png">
+								</a>
+								<div class="wrapper btn-video">
+									<button type="button" class="video-btn rounded-circle" data-toggle="modal"
+										data-target="#modelId">
+										<i class="fas fa-play"></i>
+										<div>
+										<p class="tooltip-video">Tutorial Video</p></div>
+									</button>
+								</div>
+
+								
+							</div>
+
 							<a title="COMING SOON">
 								<img width="200" height="auto" src="images/background/Apple-App-Store-logo.jpg">
 							</a>
 							<!-- Button trigger modal -->
-							<button type="button" class="video-btn rounded-circle" data-toggle="modal"
-								data-target="#modelId">
-								<i class="fas fa-play"></i>
-							</button>
+
 
 							<!-- Modal -->
 							<div class="modal fade" id="modelId" tabindex="-1" role="dialog"
@@ -130,27 +107,18 @@
 									<div class="modal-content">
 										<div class="modal-body">
 											<div id="video_show_bg">
-												<video class="video" loop="-1" width="100%" height="auto" id="video"
+												<video class="video" loop="-1" width="auto" height="100%" id="video"
 													muted>
-													<source src="images/video/huongdan.mp4" type="video/mp4">
-													<source src="images/video/huongdan.ogg" type="video/ogg">
-													<source src="images/video/huongdan.webm" type="video/webm">
+													<source src="images/video/videoplayback.mp4" type="video/mp4">
+													<!-- <source src="images/video/huongdan.ogg" type="video/ogg">
+													<source src="images/video/huongdan.webm" type="video/webm"> -->
 												</video>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- <a > <img width="200" height="auto"
-									style="background-color: aliceblue; border-radius: 12px"
-									src="./images/background/apk-androi.png"></a> -->
 						</div>
-						<!-- <div class="androi ">
-
-							<span style="color: #ffffff;font-size: 30px;
-							line-height: 40px;">(COMING SOON)</span>
-							<div>&emsp;</div>
-						</div> -->
 
 					</div>
 				</div>
@@ -166,9 +134,8 @@
 		<!-- about app -->
 		<div class="about_app">
 			<div class="section-title">
-				<span class="subtitle line-after">About StiB apps</span>
-				<h1 class="title">Built for everybody with <br>
-					unlimited unique features</h1>
+				<span class="subtitle line-after">About S<span style="text-transform: lowercase!important;">ti</span>B app<span style="text-transform: lowercase!important;">s</span></span>
+				<h1 class="title">Built for everybody with unlimited unique features</h1>
 			</div>
 			<div class="content d-flex justify-content-center container">
 				<ul class="row  ">
@@ -281,10 +248,10 @@
 							</div>
 							<div class="content">
 								<h3>Convenience</h3>
-								<h4 style="text-align: left">Easy to use <br>
-									Beautiful <br>
-									Simple <br>
-									Available 200<sup>+</sup> countries + 10 most popular languages
+								<h4><i class="fas fa-check"></i> Easy to use <br>
+									<i class="fas fa-check"></i> Beautiful <br>
+									<i class="fas fa-check"></i> Available 200<sup>+</sup> countries + 10 most popular
+									languages
 								</h4>
 							</div>
 						</div>
@@ -295,98 +262,94 @@
 
 		</div>
 		<!-- end of choose Stib app -->
-		<!-- ///////////////////////// -->
-		<!-- how app work and how to dowload -->
-		<!-- <div style="padding-top: 40px">
-			<video class="video" loop="-1" width="70%" height="auto" id="video" muted>
 
-				<source src="images/video/huongdan.mp4" type="video/mp4">
-				<source src="images/video/huongdan.ogg" type="video/ogg">
-				<source src="images/video/huongdan.webm" type="video/webm">
-			</video>
-		</div> -->
 		<!-- download -->
 		<div class="dowload">
 			<!-- how to use app -->
 			<!-- /////////////////////////////////////////////////////////////// -->
 			<div>
 				<!-- page 1 -->
-				<div class="page1 row align-items-center justify-content-center" id="page1">
-					<div class="title col-lg-5 col-md-12">
-						<h1 class="line-after">Trading P2p</h1>
-						<ul>
-							<li><img src="images/background/success.png" />
-								Eth/fiats with 3 steps on trading
-							</li>
-							<li><img src="images/background/success.png" />
-								Seller deposits Ethers to StiB's smart contract Escrow
-							</li>
-							<li><img src="images/background/success.png" />
-								buyer sends fiats to Seller once Escrow is confirmed
-							</li>
-							<li><img src="images/background/success.png" />
-								Seller releases Escrow
-							</li>
-						</ul>
-					</div>
-					<div style="padding-top: 40px" class="col-lg-7 col-md-12">
-						<div class="wrapper-video-trading">
-							<div class="mockup-iphone">
-								<div class="top-left-hide hide-corner"></div>
-								<div class="top-right-hide hide-corner"></div>
-								<div class="bottom-left-hide hide-corner"></div>
-								<div class="bottom-right-hide hide-corner"></div>
-								<img src="images/video/mockupIphone.png" alt="" class="img-fluid">
-							</div>
-							<video class="video" loop="-1" width="30%" height="500px" id="video1" muted>
-								<source src="images/video/videoplayback.mp4" type="video/mp4">
-								<!-- <source src="images/video/huongdan.ogg" type="video/ogg">
-							<source src="images/video/huongdan.webm" type="video/webm"> -->
-							</video>
+				<div class="container">
+					<div class="page1 row align-items-center justify-content-center" id="page1">
+						<div class="title col-lg-6 col-md-12">
+							<h1 class="line-after">Trading P2P</h1>
+							<ul>
+								<li><img src="images/background/success.png" />
+									Eth/fiats with 3 steps on trading
+								</li>
+								<li><img src="images/background/success.png" />
+									Seller deposits Ethers to StiB's smart contract Escrow
+								</li>
+								<li><img src="images/background/success.png" />
+									Buyer sends fiats to Seller once Escrow is confirmed
+								</li>
+								<li><img src="images/background/success.png" />
+									Seller releases Escrow
+								</li>
+							</ul>
 						</div>
-					</div>
+						<div style="padding-top: 40px" class="col-lg-6 col-md-12">
+							<div class="wrapper-video-trading">
+								<div class="mockup-iphone">
+									<div class="top-left-hide hide-corner"></div>
+									<div class="top-right-hide hide-corner"></div>
+									<div class="bottom-left-hide hide-corner"></div>
+									<div class="bottom-right-hide hide-corner"></div>
+									<img src="images/video/mockupIphone.png" alt="" class="img-fluid">
+								</div>
+								<video class="video" loop="-1" width="30%" height="500px" id="video1" muted>
+									<source src="images/video/videoplayback.mp4" type="video/mp4">
+									<!-- <source src="images/video/huongdan.ogg" type="video/ogg">
+								<source src="images/video/huongdan.webm" type="video/webm"> -->
+								</video>
+							</div>
+						</div>
 
+					</div>
 				</div>
+
 				<!-- end page 1 -->
 				<!-- ............................. -->
 				<!-- page 2 -->
-				<div class="page2 row d-flex flex-row justify-content-center align-items-center" id="page2"
-					style="background-color: #F38320;">
-
-					<div style="padding-top: 40px" class="col-lg-7 col-md-12">
-						<div class="wrapper-video-trading">
-							<div class="mockup-iphone">
-								<div class="top-left-hide hide-corner" style="background: #F38320"></div>
-								<div class="top-right-hide hide-corner" style="background: #F38320"></div>
-								<div class="bottom-left-hide hide-corner" style="background: #F38320"></div>
-								<div class="bottom-right-hide hide-corner" style="background: #F38320"></div>
-								<img src="images/video/mockupIphone.png" alt="" class="img-fluid">
+				<div style="background-color: #191919;">
+					<div class="container">
+						<div class="page2 row d-flex flex-row justify-content-center align-items-center" id="page2">
+							<div style="padding-top: 40px" class="col-lg-6 col-md-12">
+								<div class="wrapper-video-trading">
+									<div class="mockup-iphone">
+										<div class="top-left-hide hide-corner" style="background: #191919"></div>
+										<div class="top-right-hide hide-corner" style="background: #191919"></div>
+										<div class="bottom-left-hide hide-corner" style="background: #191919"></div>
+										<div class="bottom-right-hide hide-corner" style="background: #191919"></div>
+										<img src="images/video/mockupIphone.png" alt="" class="img-fluid">
+									</div>
+									<video class="video" loop="-1" width="30%" height="500px" id="video2" muted>
+										<source src="images/video/videoplayback2.mp4" type="video/mp4">
+										<!-- <source src="images/video/huongdan.ogg" type="video/ogg">
+									<source src="images/video/huongdan.webm" type="video/webm"> -->
+									</video>
+								</div>
 							</div>
-							<video class="video" loop="-1" width="30%" height="500px" id="video2" muted>
-								<source src="images/video/videoplayback2.mp4" type="video/mp4">
-								<!-- <source src="images/video/huongdan.ogg" type="video/ogg">
-							<source src="images/video/huongdan.webm" type="video/webm"> -->
-							</video>
+
+							<div class="title col-lg-6 col-md-12 text-left">
+								<h1 class="line-after2">Lending P2P</h1>
+								<ul>
+									<li><img src="images/background/success.png" />
+										Borrower deposits Ethers to the Escrow as Collateral
+									</li>
+									<li><img src="images/background/success.png" />
+
+										Deposits Ethers to StiB's smart contract Escrow
+									</li>
+									<li><img src="images/background/success.png" />
+										Borrower repays the Loan
+									</li>
+									<li><img src="images/background/success.png" />
+										Lender releases the Escrow
+									</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-
-					<div class="title col-lg-5 col-md-12">
-						<h1 class="line-after2" style="color: black">Lending P2p</h1>
-						<ul>
-							<li><img src="images/background/success.png" />
-								Borrower deposits Ethers to the Escrow as Collateral
-							</li>
-							<li><img src="images/background/success.png" />
-
-								deposits Ethers to StiB's smart contract Escrow
-							</li>
-							<li><img src="images/background/success.png" />
-								Borrower repays the Loan
-							</li>
-							<li><img src="images/background/success.png" />
-								Lender releases the Escrow
-							</li>
-						</ul>
 					</div>
 				</div>
 				<!-- end of page 2 -->
@@ -398,9 +361,7 @@
 		<!-- end of how app work -->
 		<!-- //////////////////////////////////////////////////////////////////////// -->
 
-		<div class="back-to-top" style="display: block;" id="to-top">
-			<i class="fas fa-angle-up"></i>
-		</div>
+		
 		<div class="bottom">
 			<ul>
 				<li><a href="https://www.facebook.com/StiBLabs/" class="facebook" target="_blank">
@@ -409,46 +370,24 @@
 				<li><a href="https://www.linkedin.com/company/stib-labs" class="linkedin" target="_blank"></a>
 				</li>
 				<li><a href="https://t.me/stibeng" class="telegram" target="_blank"></a></li>
-
-
-
 			</ul>
 			<div class="bt_title">
 				<span style="border: none">© StiB Labs 2014-2140, All Rights Reserved</span>
 				<span> <a href="https://stib.co/index.php?showpage=terms">ToS</a> </span>
 				<span> <a href="https://stib.co/index.php?showpage=privacy">PRIVACY</a> </span>
-
 			</div>
-
 		</div>
-
 	</div>
-
 	<!-- end of page holder -->
-
-
-
-
-
 	<!-- ---------------------------------------------------------------------------- -->
 
 	<!-- Thư viện Jquery: -->
 	<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
-	<!-- file javascipt -->
-	<script type="text/javascript" src="javascript/index.js"></script>
-	<!-- thư viên js của bootstrap 4 -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-	<script>
 
-	</script>
+	<script type="text/javascript" src="bootstrap4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap4/js/bootstrap.bundle.min.js"></script>
+
+	<script type="text/javascript" src="javascript/index.js"></script>
 
 </body>
 

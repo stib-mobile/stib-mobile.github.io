@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    var media = $('.video-tut').get(0);
+    $('#modelId').on('hide.bs.modal', function(){
+        // var videoAttr = $('#source-video').attr("src");
+        // $('#source-video').attr("src", "");
+        // console.log($('#source-video').attr("src"));
+        // $('#source-video').attr("src", videoAttr);
+        // console.log($('#source-video').attr("src"));
+        
+        media.pause();
+        media.currentTime = 0;
+    })
+    $('.video-btn').click(function(){
+        media.play();
+    })
 
     var header_top = $('#header').offset().top + 60;
 
@@ -88,6 +102,12 @@ $(document).ready(function () {
         }
         else{
             $('#header').removeClass('bg-active');
+        }
+        if(vitrihientai > 300){
+            $('#to-top').addClass('active');
+        }
+        else{
+            $('#to-top').removeClass('active');
         }
 
 

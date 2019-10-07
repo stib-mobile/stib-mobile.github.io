@@ -1,17 +1,30 @@
 /* header */
-div#video_show_bg{
-    width: 355px;
+.modal-dialog{
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto;
 }
-video#video{
+.wrapper-video-tut{
+    width: 310px;
+    height: 676px;
+    line-height: 0;
+}
+.video-tut{
     width: 100%;
 }
 .modal-body{
     background: transparent;
     padding: 0;
+    line-height: 0;
 }
 .modal-content {
-    min-height: 780px;
     width: fit-content;
+    background: transparent;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    height: fit-content;
+    line-height: 0;
 }
 .wrapper-link-android {
     position: relative;
@@ -226,7 +239,7 @@ video#video{
     position: fixed;
     transition: 0.3s;
     background-color: #fa983a;
-    color: #fff;
+    color: #fff!important;
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
@@ -239,6 +252,12 @@ video#video{
     bottom: 30px;
     width: 50px;
     height: 50px;
+    opacity: 0;
+    visibility: hidden;
+}
+.back-to-top.active{
+    opacity: 1;
+    visibility: visible;
 }
 .back-to-top:hover {
     -webkit-animation: moveup 1s;
@@ -326,10 +345,6 @@ video#video{
     background: url(../images/background/twitter.png) no-repeat 50% 50%;
 }
 @media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 709px!important;
-        margin: 5.75rem auto!important;
-    }
     /* ///////////////////////////////////////////////////////////////////////////// */
     
     /* mobile app menu show */
@@ -545,6 +560,10 @@ video#video{
 @media(max-width: 435px){
     .main_app h1{
         font-size: 15px;
+    }
+    .wrapper-video-tut{
+        width: 250px;
+        height: 545px;
     }
 }
 @media(max-width: 400px) {

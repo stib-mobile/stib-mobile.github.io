@@ -383,6 +383,11 @@ ul.list-service li i{
 .bottom .twitter {
     background: url(../images/background/twitter.png) no-repeat 50% 50%;
 }
+.container_header .sub_menu.add-transition{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
 @media (min-width: 576px) {
     /* ///////////////////////////////////////////////////////////////////////////// */
     
@@ -475,11 +480,7 @@ ul.list-service li i{
             -ms-transform: translateX(100%);
                 transform: translateX(100%);
     }
-    .container_header .sub_menu.add-transition{
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s;
-    }
+    
     .container_header .sub_menu.active{
         -webkit-transform: translateX(0);
             -ms-transform: translateX(0);

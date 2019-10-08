@@ -38,6 +38,8 @@ h1,h2,h3,h4{
 }
 /* header  */
 .header{
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
        padding: 10px 0px; position: fixed; width: 100%;z-index: 2; -webkit-transform: 2s ease all; -ms-transform: 2s ease all; transform: 2s ease all
 }

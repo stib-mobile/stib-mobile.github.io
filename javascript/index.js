@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
-    window.onload = function(){
-        $('.container_header .sub_menu').addClass('add-transition');
-    }
+
     var media = $('.video-tut').get(0);
     $('#modelId').on('hide.bs.modal', function(){
         // var videoAttr = $('#source-video').attr("src");

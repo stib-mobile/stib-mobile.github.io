@@ -29,38 +29,13 @@ $(document).ready(function () {
 
         var page1 = $('#page1').offset().top;
         var page2 = page1 + $("#page1").outerHeight(true);
-        // var page3 = $('#page3').offset().top;
         var distance = $('#show').offset().top;
-        // var download = $('#download').offset().top;
-        // var video = $('#video').offset().top;
         var video_1 = $('#video1').offset().top;
-
         var video_2 = $('#video2').offset().top;
-
-        // var video_3 = $('#video3').offset().top;
-
-        // var video_main = document.getElementById("video")
         var video1 = document.getElementById("video1")
         var video2 = document.getElementById("video2")
-        // var video3 = document.getElementById("video3")
         var distance3 = distance + 250;
-
         var header_top = $('#header').offset().top + 60;
-
-        // if ((header_top + 200) > video && header_top <= (video + 100)) {
-
-        //     video_main.play()
-
-        // } else {
-        //     video_main.pause();
-        // }
-        // /////// page 1
-        // if(header_top > 200 && $(window).width() > 1000){
-        //     $("#logo-header").fadeIn("slow")
-        // } else if($(window).width() > 1000){
-        //     $("#logo-header").fadeOut("slow")
-        // }
-
         if ((header_top + 300) > video_1 && header_top <= (video_1 + 50)) {
 
             video1.play()
@@ -76,30 +51,6 @@ $(document).ready(function () {
         } else {
             video2.pause();
         }
-        // page 3 //////////
-        // if ((header_top + 300) > video_3 && header_top <= (video_3 + 50)) {
-
-        //     video3.play()
-
-        // } else {
-        //     video3.pause();
-        // }
-        // //////////////////////////////////////////////////////////////////////////////////////////////////// change background color for header
-
-        // NOTE của Định: Làm vậy để chi ? // 
-
-        // if (header_top == 60) {
-        //     $("#change-color ul li a").css("color", "white")
-
-        //     $("#header").css("background", "none")
-
-        // } else if ((header_top > 60 && header_top < distance) | (header_top >= page1 && header_top < page2)) {
-        //     $("#header").css("background-color", "white");
-        //     $("#change-color ul li a").css("color", "#f39c12");
-
-        // } else if ((header_top >= distance && header_top <= page1) | (header_top >= page2)) {
-        //     $("#header").css("background-color", "#10102d")
-        // }
 
         if(vitrihientai > 100){
             $('#header').addClass('bg-active');
@@ -158,5 +109,27 @@ $(document).ready(function () {
     // video play
     $("#show_video_download").click(function () {
         $("#video").show();
+    });
+
+    $('.n1').click(function(event){
+        event.preventDefault();
+        if($('.sub_menu, #icon_menu_close').hasClass('active')){
+            $('.sub_menu, #icon_menu_close').removeClass('active');
+        }
+        $('html').animate({scrollTop:$('#downloadId').offset().top}, 500);
+    })
+    $('.n2').click(function(event){
+        event.preventDefault();
+        if($('.sub_menu, #icon_menu_close').hasClass('active')){
+            $('.sub_menu, #icon_menu_close').removeClass('active');
+        }
+        $('html').animate({scrollTop:$('#show').offset().top - 60}, 500);
+    })
+    $('.n3').click(function(event){
+        event.preventDefault();
+        if($('.sub_menu, #icon_menu_close').hasClass('active')){
+            $('.sub_menu, #icon_menu_close').removeClass('active');
+        }
+        $('html').animate({scrollTop:$('#contact-us').offset().top - 60}, 500);
     })
 });

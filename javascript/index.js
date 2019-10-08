@@ -3,18 +3,16 @@ $(document).ready(function () {
 
     var media = $('.video-tut').get(0);
     $('#modelId').on('hide.bs.modal', function(){
-        // var videoAttr = $('#source-video').attr("src");
-        // $('#source-video').attr("src", "");
-        // console.log($('#source-video').attr("src"));
-        // $('#source-video').attr("src", videoAttr);
-        // console.log($('#source-video').attr("src"));
+        var videoAttr = $('#source-video').attr("src");
+        $('#source-video').attr("src", "");
+        $('#source-video').attr("src", videoAttr);
         
-        media.pause();
-        media.currentTime = 0;
+        // media.pause();
+        // media.currentTime = 0;
     })
-    $('.video-btn').click(function(){
-        media.play();
-    })
+    // $('.video-btn').click(function(){
+    //     media.play();
+    // })
 
     var header_top = $('#header').offset().top + 60;
 

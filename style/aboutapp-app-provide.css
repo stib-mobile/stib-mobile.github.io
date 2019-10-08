@@ -316,7 +316,7 @@
         right: unset;
     }
 }
-@media(max-width: 768px) {
+@media(max-width: 767px) {
     .about_app .content ul li:not(:last-child) {
         border-bottom: 1px solid #F38320;
     }

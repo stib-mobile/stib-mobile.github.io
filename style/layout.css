@@ -71,6 +71,11 @@ h1,h2,h3,h4{
         font-size: 47px; 
     }
 }
+@media (max-width: 768px){
+    .section-title{
+        margin-bottom: 40px;
+    }
+}
 @media(max-width: 435px){
     .section-title .subtitle{
         font-weight: 100;

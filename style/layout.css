@@ -33,8 +33,11 @@ h1{
 h1,h2,h3,h4{
     font-family: 'Poppins', sans-serif;
 }
-.about_app, .app_provide , .dowload_divice {
-    padding: 113px 0px 120px 0px ; 
+.about_app{
+    padding: 50px 0;
+}
+.app_provide , .dowload_divice {
+    padding: 100px 0; 
 }
 /* header  */
 .header{

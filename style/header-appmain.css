@@ -1,4 +1,15 @@
 /* header */
+.wrapper-animation-banner{
+    position: relative;
+}
+.wrapper-content-animation{
+    position: absolute;
+    background: #333;
+    top: 50px;
+    left: 124px;
+    right: 125px;
+    bottom: 70px;
+}
 .modal-dialog{
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -6,13 +17,23 @@
     height: 100%;
     margin: 0 auto;
 }
+.modal-body{
+    background: url('../images/background/phone-mockup-android.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 345px;
+    height: 757px;
+}
 .wrapper-video-tut{
     display: flex;
     justify-content: center;
-    width: 310px;
-    height: 676px;
+    width: 306px;
+    height: 620px;
     line-height: 0;
+    overflow: hidden;
     position: relative;
+    top: 60px;
+    margin: auto;
 }
 .video-tut{
     width: 100%;
@@ -26,7 +47,7 @@ iframe{
     transform: translateX(-50%);
 }
 .modal-body{
-    background: transparent;
+    /* background: transparent; */
     padding: 0;
     line-height: 0;
 }
@@ -35,9 +56,8 @@ iframe{
     width: -moz-fit-content;
     width: fit-content;
     background: transparent;
-    border-radius: 25px;
-    border: 2px solid #fff;
     overflow: hidden;
+    border: none;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -184,16 +204,16 @@ ul.list-service li i{
 }
 
 .main_app .app_photo {
-    -webkit-animation: fadeInUp ease 1s, moveup infinite 2s;
-    animation: fadeInUp ease 1s, moveup infinite 2s;
+    /* -webkit-animation: fadeInUp ease 1s, moveup infinite 2s;
+    animation: fadeInUp ease 1s, moveup infinite 2s; */
     -ms-flex-item-align: start;
     align-self: flex-start;
 }
 
-.main_app .app_photo img {
+/* .main_app .app_photo img {
     width: 50%;
     height: 50%;
-}
+} */
 
 .main_app .app_sub .store {
     padding-top: 30px;

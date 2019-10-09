@@ -296,12 +296,22 @@
         padding-left: unset;
     }
 }
+@media (max-width: 1200px){
+    .page2 .title ul li .text-page, .page1 .title ul li .text-page{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1000px){
+    .page2 .title ul li .text-page, .page1 .title ul li .text-page{
+        font-size: 12px;
+    }
+}
 @media (max-width: 992px){
     .page1 .title ul li{
         text-align: left!important;
     }
     .page1 .title ul, .page2 .title ul{
-        max-width: 380px;
+        max-width: 400px;
         margin: 0 auto;
     }
     .page2 h1.line-after2, .page1 h1.line-after{

@@ -2,6 +2,9 @@
 .wrapper-animation-banner{
     position: relative;
 }
+#modelId{
+    padding-right: 0!important;
+}
 .wrapper-content-animation{
     position: absolute;
     background: #333;
@@ -44,7 +47,7 @@
 }
 iframe{
     position: absolute;
-    top: 0;
+    top: -14px;
     left: 50%;
     /* width: 100%;
     height: 100%; */
@@ -278,6 +281,10 @@ ul.list-service li i{
     color: #fff;
     font-size: 15px;
     line-height: 0;
+}
+.video-btn i{
+    margin-top: 1px;
+    margin-left: 3px;
 }
 .tooltip-video{
     position: absolute;
@@ -675,9 +682,23 @@ ul.list-service li i{
     .main_app h1{
         font-size: 15px;
     }
-    .wrapper-video-tut{
+    /* .wrapper-video-tut{
         width: 250px;
         height: 545px;
+    } */
+    .modal-body{
+        width: 252px;
+        height: 555px;
+    }
+    .wrapper-video-tut{
+        width: 222px;
+        height: 451px;
+        top: 46px;
+    }
+    #source-video{
+        width: 222px;
+        height: 475px;
+        top: -13px;
     }
 }
 @media(max-width: 400px) {

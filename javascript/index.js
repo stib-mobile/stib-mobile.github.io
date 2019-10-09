@@ -15,44 +15,8 @@ $(document).ready(function () {
     //     media.play();
     // })
     
-    // event when change class
-    // Begin setup
-
-    const mainNode = document.getElementsByClassName('last-item-carousel')[0];
-    // const toggleNode = document.getElementById('toggle')
-
-    // toggleNode.addEventListener('click', function() {
-    // mainNode.classList.toggle('--blue')
-    // })
-
-    // End setup
-
-    function callback(mutationsList, observer) {
-        // console.log('Mutations:', mutationsList)
-        // console.log('Observer:', observer)
-        mutationsList.forEach(mutation => {
-            if (mutation.attributeName === 'class') {
-                funcAnimationSlide();
-            }
-            else{
-                // $('#android-mockup-img').css({"opacity" : "1", "visibility": "visible", "display": "block"});
-                // $('#iphone-mockup-img').css({"opacity" : "0", "visibility": "hidden", "display": "none"});
-            }
-        })
-    }
-
-    const mutationObserver = new MutationObserver(callback);
-
-    mutationObserver.observe(mainNode, { attributes: true });
-
-    function funcAnimationSlide(){
-        // $('#android-mockup-img').css({"opacity" : "0", "visibility": "hidden", "display": "none"});
-        // $('#iphone-mockup-img').css({"opacity" : "1", "visibility": "visible", "display": "block"});
-    }
-    
 
     var header_top = $('#header').offset().top + 60;
-
 
     if (header_top > 60) {
         $("#change-color ul li a").css("color", "#f39c12")

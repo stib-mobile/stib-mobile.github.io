@@ -9,8 +9,8 @@
     position: absolute;
     background: #333;
     top: 50px;
-    left: 124px;
-    right: 125px;
+    left: 149px;
+    right: 153px;
     bottom: 70px;
 }
 .modal-dialog{
@@ -81,11 +81,7 @@ iframe{
 .wrapper-link-android a, .wrapper-link-ios a{
     display: block;
 }
-.wrapper-link-android a:hover ~ .qr-wrapper, .wrapper-link-ios a:hover ~ .qr-wrapper{
-    transform: scale(1)!important;
-    opacity: 1!important;
-    visibility: visible!important;
-}
+
 .header{
     border-bottom: 1px solid transparent;
 }
@@ -235,7 +231,7 @@ ul.list-service li i{
 } */
 
 .main_app .app_sub .store {
-    padding-top: 30px;
+    padding-top: 45px;
 }
 
 .main_app .app_sub .store .androi {
@@ -258,13 +254,17 @@ ul.list-service li i{
     position: absolute;
     margin-top: 10px;
     border: 5px solid #333;
-    transition: .3s;
-    transform: scale(0.9);
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
     opacity: 0;
     visibility: hidden;
 }
 
-.qr-wrapper:before {content: '';position: absolute;top: -14px;border-left: 8px solid transparent;border-right: 8px solid transparent;border-bottom: 10px solid #333;left: 50%;transform: translateX(-50%);}
+.qr-wrapper:before {content: '';position: absolute;top: -14px;border-left: 8px solid transparent;border-right: 8px solid transparent;border-bottom: 10px solid #333;left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);}
 
 .main_app h1 {
     -webkit-animation: fadeInUp ease 1s;
@@ -616,6 +616,13 @@ ul.list-service li i{
         color: #ff9f1a
     }
 }
+.wrapper-link-android a:hover ~ .qr-wrapper, .wrapper-link-ios a:hover ~ .qr-wrapper{
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
 @media(max-width: 1200px) {
     h1 {
         font-size: 50px
@@ -625,6 +632,12 @@ ul.list-service li i{
     }
     .main_app .circle {
         top: 50px
+    }
+    .wrapper-content-animation{
+        top: 43px;
+        left: 103px;
+        right: 104px;
+        bottom: 70px;
     }
 }
 @media(max-width: 1000px) {
@@ -649,6 +662,15 @@ ul.list-service li i{
     }
     .circle {
         display: none
+    }
+    .qr-wrapper{
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        max-width: 175px;
+        margin: auto;
+        margin-top: 10px;
     }
 }
 @media (max-width: 769px){
@@ -697,7 +719,12 @@ ul.list-service li i{
         height: auto;
     }
     .video-btn{
-        top: -26px!important;
+        top: -30px!important;
+        right: 0px;
+        /* transform: translateX(50%); */
+        border-radius: 5px!important;
+        width: 26%;
+        height: 35px;
     }
 }
 @media(max-width: 435px){

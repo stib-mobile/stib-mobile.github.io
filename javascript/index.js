@@ -51,7 +51,7 @@ $(document).ready(function () {
             video2.pause();
         }
 
-        if (vitrihientai > 100) {
+        if (vitrihientai > 30) {
             $('#header').addClass('bg-active');
             $('#logo-header').addClass('active');
         }

@@ -2,16 +2,19 @@
     margin-bottom: 10px ; text-align: initial
 }
 .dowload ul li img{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     border-radius: 8px ;
     margin-right: 10px
 }
-.dowload .title{
+/* .dowload .title{
     padding-left: 100px
-}
+} */
 .dowload ul {
     text-align: left
 }
 /* video */
-

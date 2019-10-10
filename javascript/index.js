@@ -10,8 +10,7 @@ $(document).ready(function () {
 
     if (header_top > 60) {
         $("#change-color ul li a").css("color", "#f39c12")
-
-    }
+   }
     $(window).scroll(function () {
 
         var page1 = $('#page1').offset().top;
@@ -107,8 +106,7 @@ $(document).ready(function () {
         $("#menu_show").fadeToggle("slow")
     });
     $("#menu_show_icon_close").click(function () {
-
-        $("#menu_show").fadeToggle("slow")
+         $("#menu_show").fadeToggle("slow")
 
     })
 

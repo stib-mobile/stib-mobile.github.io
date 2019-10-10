@@ -29,27 +29,27 @@ $(document).ready(function () {
         var page1 = $('#page1').offset().top;
         var page2 = page1 + $("#page1").outerHeight(true);
         var distance = $('#show').offset().top;
-        var video_1 = $('#video1').offset().top;
-        var video_2 = $('#video2').offset().top;
-        var video1 = document.getElementById("video1")
-        var video2 = document.getElementById("video2")
+        // var video_1 = $('#video1').offset().top;
+        // var video_2 = $('#video2').offset().top;
+        // var video1 = document.getElementById("video1")
+        // var video2 = document.getElementById("video2")
         var distance3 = distance + 250;
         var header_top = $('#header').offset().top + 60;
-        if ((header_top + 300) > video_1 && header_top <= (video_1 + 50)) {
+        // if ((header_top + 300) > video_1 && header_top <= (video_1 + 50)) {
 
-            video1.play()
+        //     video1.play()
 
-        } else {
-            video1.pause();
-        }
+        // } else {
+        //     video1.pause();
+        // }
         //  page 2///////
-        if ((header_top + 300) > video_2 && header_top <= (video_2 + 50)) {
+        // if ((header_top + 300) > video_2 && header_top <= (video_2 + 50)) {
 
-            video2.play()
+        //     video2.play()
 
-        } else {
-            video2.pause();
-        }
+        // } else {
+        //     video2.pause();
+        // }
 
         if (vitrihientai > 30) {
             $('#header').addClass('bg-active');

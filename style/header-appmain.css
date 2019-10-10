@@ -664,7 +664,9 @@ ul.list-service li i{
         display: none
     }
     .qr-wrapper{
-        transform: none;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
         opacity: 1;
         visibility: visible;
         position: relative;

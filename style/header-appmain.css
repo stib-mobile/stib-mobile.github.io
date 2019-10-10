@@ -1,3 +1,7 @@
+/*  */
+.languages{
+    position: fixed; top:300px ; right: 1px;
+}
 /* header */
 .wrapper-animation-banner{
     position: relative;
@@ -596,7 +600,7 @@ ul.list-service li i{
 }
 @media(min-width:1250px){
  .main_app{
-     padding-top: 100px
+     padding-top: 40px
  }
  #android-mockup-img{
      width: 50%!important

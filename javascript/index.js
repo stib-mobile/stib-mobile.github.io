@@ -1,6 +1,16 @@
 $(document).ready(function () {
-
-
+    $("#vietnamese").css("display", "none");
+    $("#Vn").click(function(){
+        console.log("ok")
+    $("#english").css("display", "none");
+    $("#vietnamese").css("display", "block");
+    });
+    $("#En").click(function(){
+        console.log("ok1")
+        $("#english").css("display", "block");
+    $("#vietnamese").css("display", "none");
+    });
+  
     var media = $('.video-tut').get(0);
     $('#modelId').on('hide.bs.modal', function () {
         var videoAttr = $('#source-video').attr("src");

@@ -131,11 +131,6 @@ iframe{
 .container_header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
-<<<<<<< HEAD
-  display: none
-  
-=======
->>>>>>> master
 }
 
 .container_header .menu {
@@ -592,19 +587,11 @@ ul.list-service li i{
         align-items: flex-end;
         height: 110px;
     }
-<<<<<<< HEAD
-    .menu_show .sub_menu ul li{
-        margin-top: 5px;
-    }
-    .active{
-        color: #ff9f1a;
-=======
     .menu_show .sub_menu ul li {
         margin-top: 5px
     }
     .active {
         color: #ff9f1a
->>>>>>> master
     }
 }
 @media(max-width: 1200px) {
@@ -730,5 +717,4 @@ ul.list-service li i{
     .app_sub .store .androi img{
         width: 130px;
     }
-}
 }

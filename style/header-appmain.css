@@ -21,25 +21,25 @@
     margin: 0 auto;
 }
 .modal-body{
-    background: url('../images/background/phone-mockup-android.png');
+    background: url('../images/background/android-mockup.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 345px;
-    height: 757px;
+    height: 680px;
 }
 .wrapper-video-tut{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 306px;
-    height: 620px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 319px;
+    height: 565px;
     line-height: 0;
     overflow: hidden;
     position: relative;
-    top: 60px;
+    top: 47px;
     margin: auto;
 }
 .video-tut{
@@ -47,13 +47,15 @@
 }
 iframe{
     position: absolute;
-    top: -14px;
+    top: -45px;
     left: 50%;
     /* width: 100%;
     height: 100%; */
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 340px;
+    height: 690px;
 }
 .modal-body{
     /* background: transparent; */
@@ -75,6 +77,14 @@ iframe{
 .wrapper-link-android {
     position: relative;
     margin-right: 30px;
+}
+.wrapper-link-android a, .wrapper-link-ios a{
+    display: block;
+}
+.wrapper-link-android a:hover ~ .qr-wrapper, .wrapper-link-ios a:hover ~ .qr-wrapper{
+    transform: scale(1)!important;
+    opacity: 1!important;
+    visibility: visible!important;
 }
 .header{
     border-bottom: 1px solid transparent;
@@ -243,6 +253,18 @@ ul.list-service li i{
         -ms-flex-direction: row;
             flex-direction: row;
 }
+
+.qr-wrapper {
+    position: absolute;
+    margin-top: 10px;
+    border: 5px solid #333;
+    transition: .3s;
+    transform: scale(0.9);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.qr-wrapper:before {content: '';position: absolute;top: -14px;border-left: 8px solid transparent;border-right: 8px solid transparent;border-bottom: 10px solid #333;left: 50%;transform: translateX(-50%);}
 
 .main_app h1 {
     -webkit-animation: fadeInUp ease 1s;
@@ -688,17 +710,17 @@ ul.list-service li i{
     } */
     .modal-body{
         width: 252px;
-        height: 555px;
+        height: 497px;
     }
     .wrapper-video-tut{
         width: 222px;
-        height: 451px;
-        top: 46px;
+        height: 401px;
+        top: 40px;
     }
     #source-video{
         width: 222px;
-        height: 475px;
-        top: -13px;
+        height: 489px;
+        top: -39px;
     }
 }
 @media(max-width: 400px) {

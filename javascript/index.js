@@ -35,13 +35,13 @@ $(document).ready(function () {
         if (isMobile.Datalogic())
             deviceName = 'Datalogic';
         else if (isMobile.Bluebird())
-            deviceName = 'Bluebird';
+            deviceName = 'Bluebird'; // android
         else if (isMobile.Honeywell())
-            deviceName = 'Honeywell';
+            deviceName = 'Honeywell'; // android
         else if (isMobile.Zebra())
-            deviceName = 'Zebra';
+            deviceName = 'Zebra'; // android
         else if (isMobile.BlackBerry())
-            deviceName = 'BlackBerry';
+            deviceName = 'BlackBerry'; // android
         else if (isMobile.iOS())
             deviceName = 'iOS';
         else if ((deviceName == '') && (isMobile.Android()))
@@ -54,6 +54,32 @@ $(document).ready(function () {
         return deviceName;      
      }
    console.log(getDeviceName()) ;
+   
+   function setDisplay(){
+        // var device = getDeviceName();
+        // var device = 'iOS';
+        var device = 'Android';
+        if(device == 'iOS'){ // tren iOS
+            $('#android-mockup-img').css({"display": "none"});
+            $('#iphone-mockup-img').css({"display": "inline"});
+            $('.wrapper-content-animation').addClass('ios-display');
+            
+            $('.available-ios').addClass('ios-display');
+            $('.wrapper-link-ios').addClass('ios-display');
+        }
+        else if(device == 'Android'){ // tren Android
+            $('#android-mockup-img').css({"display": "inline"});
+            $('#iphone-mockup-img').css({"display": "none"});
+
+            $('.available-android').addClass('android-display');
+            $('.wrapper-link-android').addClass('android-display');
+        }
+        else { // tren PC, mac dinh hien thi ca hai
+            $('#android-mockup-img').css({"display": "inline"});
+            $('#iphone-mockup-img').css({"display": "none"});
+        }
+   }
+   setDisplay();
   var english = `<div id="english" >
   <!-- start  header  -->
   <div class="header" id="header">
@@ -1048,15 +1074,7 @@ $("#btnVnLang").click(function(){
     $("#to-top").click(function () {
         $("html, body").animate({ scrollTop: 0 }, 500);
     })
-    // show togle menu for mobile app
-    $("#icon_menu").click(function () {
-        $("#menu_show").fadeToggle("slow");
-    });
-    $("#menu_show_icon_close").click(function () {
-
-        $("#menu_show").fadeToggle("slow");
-
-    })
+    
     $('#icon_menu').click(function (event) {
         event.preventDefault();
         $('.container_header .sub_menu').addClass('active');

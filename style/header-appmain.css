@@ -1,4 +1,18 @@
 /*  */
+
+.available-ios, .available-android{
+    display: none;
+}
+.available-ios p, .available-android p{
+    margin-bottom: 0;
+    font-size: 16px!important;
+    font-style: italic;
+    color: #f38320;
+    max-width: 100%!important;
+}
+#iphone-mockup-img{
+    display: none;
+}
 .languages{
     position: fixed; top:300px ; right: 1px;
 }
@@ -25,7 +39,7 @@ a.eng{border-bottom: none!important;}
     position: fixed;
     top: 10%;
     right: 0;
-    z-index: 1000;
+    z-index: 2;
 }
 /* header */
 .wrapper-animation-banner{
@@ -39,6 +53,12 @@ a.eng{border-bottom: none!important;}
     background: #333;
     top: 50px;
     left: 149px;
+    right: 153px;
+    bottom: 70px;
+}
+.wrapper-content-animation.ios-display{
+    top: 67px;
+    left: 152px;
     right: 153px;
     bottom: 70px;
 }
@@ -106,6 +126,10 @@ iframe{
 .wrapper-link-android {
     position: relative;
     margin-right: 30px;
+    display: none;
+}
+.wrapper-link-ios{
+    display: none;
 }
 .wrapper-link-android a, .wrapper-link-ios a{
     display: block;
@@ -644,6 +668,12 @@ ul.list-service li i{
     .active {
         color: #ff9f1a
     }
+    .available-android.android-display{
+        display: block;
+    }
+    .available-ios.ios-display{
+        display: block;
+    }
 }
 .wrapper-link-android a:hover ~ .qr-wrapper, .wrapper-link-ios a:hover ~ .qr-wrapper{
     -webkit-transform: scale(1);
@@ -666,6 +696,12 @@ ul.list-service li i{
         top: 43px;
         left: 103px;
         right: 104px;
+        bottom: 70px;
+    }
+    .wrapper-content-animation.ios-display {
+        top: 63px;
+        left: 106px;
+        right: 107px;
         bottom: 70px;
     }
 }
@@ -693,15 +729,13 @@ ul.list-service li i{
         display: none
     }
     .qr-wrapper{
-        -webkit-transform: none;
-            -ms-transform: none;
-                transform: none;
-        opacity: 1;
-        visibility: visible;
-        position: relative;
-        max-width: 175px;
-        margin: auto;
-        margin-top: 10px;
+        display: none;
+    }
+    .wrapper-link-ios.ios-display{
+        display: block;
+    }
+    .wrapper-link-android.android-display{
+        display: block;
     }
 }
 @media (max-width: 769px){

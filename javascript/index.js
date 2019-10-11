@@ -1,6 +1,89 @@
 $(document).ready(function () {
 
+    function getDeviceName () {
+        var deviceName = '';
+    
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            Datalogic: function() {
+                return navigator.userAgent.match(/DL-AXIS/i);
+            },
+            Bluebird: function() {
+                return navigator.userAgent.match(/EF500/i);
+            },
+            Honeywell: function() {
+                return navigator.userAgent.match(/CT50/i);
+            },
+            Zebra: function() {
+                return navigator.userAgent.match(/TC70|TC55/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function() {
+                return (isMobile.Datalogic() || isMobile.Bluebird() || isMobile.Honeywell() || isMobile.Zebra() || isMobile.BlackBerry() || isMobile.Android() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+    
+        if (isMobile.Datalogic())
+            deviceName = 'Datalogic';
+        else if (isMobile.Bluebird())
+            deviceName = 'Bluebird'; // android
+        else if (isMobile.Honeywell())
+            deviceName = 'Honeywell'; // android
+        else if (isMobile.Zebra())
+            deviceName = 'Zebra'; // android
+        else if (isMobile.BlackBerry())
+            deviceName = 'BlackBerry'; // android
+        else if (isMobile.iOS())
+            deviceName = 'iOS';
+        else if ((deviceName == '') && (isMobile.Android()))
+            deviceName = 'Android';
+        else if ((deviceName == '') && (isMobile.Windows()))
+            deviceName = 'Windows';
+    
+       
+    
+        return deviceName;      
+     }
+   console.log(getDeviceName()) ;
+   
+   function setDisplay(){
+        // var device = getDeviceName();
+        // var device = 'iOS';
+        var device = 'iOS';
+        if(device == 'iOS'){ // tren iOS
+            $('#android-mockup-img').css({"display": "none"});
+            $('#iphone-mockup-img').css({"display": "inline"});
+            $('.wrapper-content-animation').addClass('ios-display');
+            
+            $('.available-ios').addClass('ios-display');
+            $('.wrapper-link-ios').addClass('ios-display');
+        }
+        else if(device == 'Android'){ // tren Android
+            $('#android-mockup-img').css({"display": "inline"});
+            $('#iphone-mockup-img').css({"display": "none"});
 
+            $('.available-android').addClass('android-display');
+            $('.wrapper-link-android').addClass('android-display');
+        }
+        else { // tren PC, mac dinh hien thi ca hai
+            $('#android-mockup-img').css({"display": "inline"});
+            $('#iphone-mockup-img').css({"display": "none"});
+        }
+   }
+   setDisplay();
+
+
+   
     var media = $('.video-tut').get(0);
     $('#modelId').on('hide.bs.modal', function () {
         var videoAttr = $('#source-video').attr("src");

@@ -61,9 +61,9 @@ $(document).ready(function () {
     }
 
     function setDisplay() {
-        // var device = getDeviceName();
+        var device = getDeviceName();
         // console.log(getDeviceName());
-        var device = 'iOS';
+        // var device = 'iOS';
         // var device = 'Android';
         // var device = 'PC'
         if (device == 'iOS') { // tren iOS

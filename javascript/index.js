@@ -61,9 +61,9 @@ $(document).ready(function () {
     }
 
     function setDisplay() {
-        var device = getDeviceName();
-        console.log(getDeviceName());
-        // var device = 'iOS';
+        // var device = getDeviceName();
+        // console.log(getDeviceName());
+        var device = 'iOS';
         // var device = 'Android';
         // var device = 'PC'
         if (device == 'iOS') { // tren iOS
@@ -74,6 +74,15 @@ $(document).ready(function () {
             $('.available-ios').addClass('ios-display');
             $('.wrapper-link-ios').addClass('ios-display');
             $('.wrapper-link-android').addClass('ios-display');
+            for (let index = 0; index < $('.modal-body').length; index++) {
+                $('.modal-body').eq(index).addClass('ios-display');
+            }
+            for (let index = 0; index < $('.wrapper-video-tut').length; index++) {
+                $('.wrapper-video-tut').eq(index).addClass('ios-display');
+            }
+            for (let index = 0; index < $('iframe').length; index++) {
+                $('iframe').eq(index).addClass('ios-display');
+            }
         }
         else if (device == 'Android') { // tren Android
             $('#android-mockup-img').css({ "display": "inline" });
@@ -103,27 +112,8 @@ $(document).ready(function () {
         var page1 = $('#page1').offset().top;
         var page2 = page1 + $("#page1").outerHeight(true);
         var distance = $('#show').offset().top;
-        // var video_1 = $('#video1').offset().top;
-        // var video_2 = $('#video2').offset().top;
-        // var video1 = document.getElementById("video1")
-        // var video2 = document.getElementById("video2")
         var distance3 = distance + 250;
         var header_top = $('#header').offset().top + 60;
-        // if ((header_top + 300) > video_1 && header_top <= (video_1 + 50)) {
-
-        //     video1.play()
-
-        // } else {
-        //     video1.pause();
-        // }
-        //  page 2///////
-        // if ((header_top + 300) > video_2 && header_top <= (video_2 + 50)) {
-
-        //     video2.play()
-
-        // } else {
-        //     video2.pause();
-        // }
 
         if (vitrihientai > 30) {
             $('#header').addClass('bg-active');

@@ -54,7 +54,12 @@ a.eng{border-bottom: none!important;}
     right: 153px;
     bottom: 70px;
 }
-
+.wrapper-content-animation.ios-display{
+    top: 67px;
+    left: 152px;
+    right: 153px;
+    bottom: 70px;
+}
 .modal-dialog {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -798,6 +803,19 @@ ul.list-service li i {
     }
     .wrapper-link-android.android-display{
         display: block;
+        margin-right: 0;
+    }
+    .wrapper-link-ios.android-display{
+        display: none;
+    }
+    .wrapper-link-android.ios-display{
+        display: none;
+    }
+    .wrapper-link-android.android-display a, .wrapper-link-ios.ios-display a{
+        width: 280px;
+    }
+    .wrapper-link-android.android-display a img.btn-android, .wrapper-link-ios.ios-display a img.btn-ios, .wrapper-link-android.android-display a .btn-android-hover, .wrapper-link-ios.ios-display a .btn-ios-hover{
+        width: 280px!important;
     }
 }
 
@@ -860,6 +878,12 @@ ul.list-service li i {
         width: 165px;
         height: 48px;
         margin: 0 auto;
+    }
+    .wrapper-link-android.android-display .video-btn, .wrapper-link-ios.ios-display .video-btn{
+        border-radius: 50%!important;
+        width: 50px;
+        height: 50px;
+        top: -33px!important;
     }
 }
 

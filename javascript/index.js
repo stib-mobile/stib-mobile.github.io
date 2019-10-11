@@ -54,12 +54,14 @@ $(document).ready(function () {
     
         return deviceName;      
      }
-   console.log(getDeviceName()) ;
+//    console.log(getDeviceName()) ;
    
    function setDisplay(){
-        // var device = getDeviceName();
+        var device = getDeviceName();
+        console.log(getDeviceName());
         // var device = 'iOS';
-        var device = 'iOS';
+        // var device = 'Android';
+        // var device = 'PC'
         if(device == 'iOS'){ // tren iOS
             $('#android-mockup-img').css({"display": "none"});
             $('#iphone-mockup-img').css({"display": "inline"});
@@ -67,6 +69,7 @@ $(document).ready(function () {
             
             $('.available-ios').addClass('ios-display');
             $('.wrapper-link-ios').addClass('ios-display');
+            $('.wrapper-link-android').addClass('ios-display');
         }
         else if(device == 'Android'){ // tren Android
             $('#android-mockup-img').css({"display": "inline"});
@@ -74,6 +77,7 @@ $(document).ready(function () {
 
             $('.available-android').addClass('android-display');
             $('.wrapper-link-android').addClass('android-display');
+            $('.wrapper-link-ios').addClass('android-display');
         }
         else { // tren PC, mac dinh hien thi ca hai
             $('#android-mockup-img').css({"display": "inline"});

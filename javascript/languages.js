@@ -89,7 +89,7 @@ var db_vn = [
     {
         "title":
             [
-                "Cho vay/Vay P2P trên hợp đồng thông minh StiB",
+                "Cho giao dịch/vay mượn P2P trên hợp đồng thông minh StiB",
                 "Không phí giao dịch",
                 "Bảo vệ pháp lý",
                 "Chia sẻ lợi nhuận",
@@ -112,17 +112,17 @@ var db_vn = [
     },
     {
         "why":
-            ["TẠI SAO NÊN GIAO DỊCH/CHO VAY TRÊN HỢP ĐỒNG THÔNG MINH StiB", "KHÔNG PHÍ GIAO DỊCH",
+            ["TẠI SAO NÊN GIAO DỊCH/CHO VAY TRÊN HỢP ĐỒNG THÔNG MINH StiB?", "KHÔNG PHÍ GIAO DỊCH",
                 "Luôn luôn miễn phí giao dịch với Hợp đồng thông minh StiB vì những rủi ro sẽ thuộc về bạn và những người khác!",
                 "CHIA SẺ LỢI NHUẬN", "Chúng tôi chia sẻ lợi nhuận cũng như tiền lãi với StiB Reserves thông qua đối tác",
-                "BẢO VỆ PHÁP LÝ", "Bảo vệ thương gia/khách hàng với StiB Legals bao gồm luật sư trong nước và quốc tế",
+                "BẢO VỆ PHÁP LÝ", "Bảo vệ người giao dịch/khách hàng với StiB Legals bao gồm luật sư trong nước và quốc tế",
                 "TIỆN LỢI", "Dễ sử dụng, giao diện đẹp mắt và có mặt trên 200 quốc gia với hơn 10 ngôn ngữ phổ biến"]
     },
     {
         "step":
-            ["GIAO DỊCH P2P", "Bước", ": Người bán gửi đến Hợp đồng Thông minh StiB (Không Escrow)", " Người mua gửi tiền",
+            ["GIAO DỊCH P2P", "Bước", " Người bán gửi đến Hợp đồng Thông minh StiB (Không Escrow)", " Người mua gửi tiền",
                 " Người bán giải phóng", "VAY MƯỢN P2P", " Người vay gửi tiền đến Hợp đồng Thông minh StiB (Không Tài sản thế chấp)",
-                " Người cho vay gửi khoản vay", "Người vay trả tiền vay", "Người cho vay giải phóng",
+                " Người cho vay gửi khoản vay", " Người vay trả tiền vay", " Người cho vay giải phóng",
                 "LIÊN HỆ", "ĐIỀU KHOẢN", "BẢO MẬT"]
     }];
 
@@ -167,10 +167,10 @@ var db_en = [
     },
     {
         "step":
-            ["GIAO DỊCH P2P", "Bước", ": Người bán gửi đến Hợp đồng Thông minh StiB (Không Escrow)", " Người mua gửi tiền",
-                " Người bán giải phóng", "VAY MƯỢN P2P", " Người vay gửi tiền đến Hợp đồng Thông minh StiB (Không Tài sản thế chấp)",
-                " Người cho vay gửi khoản vay", "Người vay trả tiền vay", "Người cho vay giải phóng",
-                "LIÊN HỆ", "ĐIỀU KHOẢN", "BẢO MẬT"]
+            ["TRADING P2P", "Step", " Seller Deposits to StiB's Smart Contracts. (Free Escrow)", " Buyer Marks as paid",
+                " Seller Releases.", "LENDING P2P", " Borrower Deposits to StiB's Smart Contracts. (Free Collateral)",
+                " Lender Sends the loan.", " Borrower Repays the loan.", "Lender Releases.",
+                "CONTACT US", "ToS", "PRIVACY"]
     }];
 
 

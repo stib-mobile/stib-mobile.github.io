@@ -1,10 +1,18 @@
 $(document).ready(function () {
 
-    var media = $('.video-tut').get(0);
+    // var media = $('.video-tut').get(0);
+    // $('#modelId').on('hide.bs.modal', function () {
+    //     var videoAttr = $('#source-video').attr("src");
+    //     $('#source-video').attr("src", "");
+    //     $('#source-video').attr("src", videoAttr);
+    // })
+    var videoTut = document.getElementById('video-tut');
     $('#modelId').on('hide.bs.modal', function () {
-        var videoAttr = $('#source-video').attr("src");
-        $('#source-video').attr("src", "");
-        $('#source-video').attr("src", videoAttr);
+        videoTut.pause();
+        videoTut.currentTime = 0;
+    })
+    $('.video-btn').click(function(){
+        videoTut.play();
     })
 
     function getDeviceName() {
@@ -128,6 +136,25 @@ $(document).ready(function () {
         }
         else {
             $('#to-top').removeClass('active');
+        }
+
+        // //////////////////////////////////////////////
+        var videoTrade = document.getElementById('video-trade');
+        var videoLend = document.getElementById('video-lend');
+        if (vitrihientai > $('.dowload').offset().top - 300){
+            videoTrade.play();
+        }
+        else{
+            videoTrade.pause();
+            videoTrade.currentTime = 0;
+        }
+
+        if (vitrihientai > $('#page2Id').offset().top - 300){
+            videoLend.play();
+        }
+        else{
+            videoLend.pause();
+            videoLend.currentTime = 0;
         }
 
 

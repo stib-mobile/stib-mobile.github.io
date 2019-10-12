@@ -118,10 +118,6 @@ a.eng {
     top: 66px;
 }
 
-.video-tut {
-    width: 100%;
-}
-
 iframe {
     position: absolute;
     top: -42px;
@@ -133,6 +129,17 @@ iframe {
     transform: translateX(-50%);
     width: 321px;
     height: 648px;
+}
+video{
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    /* width: 100%;
+    height: 100%; */
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 313px;
 }
 
 iframe.ios-display {
@@ -944,14 +951,17 @@ ul.list-service li i {
         height: 380px;
         top: 54px;
     }
+    video{
+        width: 231px;
+    }
     iframe.ios-display {
         top: -47px!important;
     }
-    #source-video {
+    /* #source-video {
         width: 234px;
         height: 488px;
         top: -38px;
-    }
+    } */
 }
 
 @media(max-width: 400px) {

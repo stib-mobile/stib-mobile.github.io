@@ -1,18 +1,23 @@
 /* header */
 
-.available-ios, .available-android{
+.available-ios, .available-android {
     display: none;
 }
-.available-ios p, .available-android p{
+
+.available-ios p, .available-android p {
     margin-bottom: 0;
     font-size: 16px!important;
     font-style: italic;
     color: #f38320;
     max-width: 100%!important;
 }
-.languages{
-    position: fixed; top:300px ; right: 1px;
+
+.languages {
+    position: fixed;
+    top: 300px;
+    right: 1px;
 }
+
 a.lang {
     padding: 15px;
     background: #fff;
@@ -31,13 +36,18 @@ a.lang:hover {
 a.lang-active {
     color: #f38320!important;
 }
-a.eng{border-bottom: none!important;}
-.dual-lang{
+
+a.eng {
+    border-bottom: none!important;
+}
+
+.dual-lang {
     position: fixed;
     top: 10%;
     right: 0;
     z-index: 2;
 }
+
 .wrapper-animation-banner {
     position: relative;
 }
@@ -54,12 +64,14 @@ a.eng{border-bottom: none!important;}
     right: 153px;
     bottom: 70px;
 }
-.wrapper-content-animation.ios-display{
+
+.wrapper-content-animation.ios-display {
     top: 67px;
     left: 152px;
     right: 153px;
     bottom: 70px;
 }
+
 .modal-dialog {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -74,6 +86,14 @@ a.eng{border-bottom: none!important;}
     background-repeat: no-repeat;
     width: 305px;
     height: 680px;
+}
+
+.modal-body.ios-display {
+    background: url('../images/background/iphone-mockup-video.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 302px;
+    height: 654px;
 }
 
 .wrapper-video-tut {
@@ -92,8 +112,10 @@ a.eng{border-bottom: none!important;}
     margin: auto;
 }
 
-.video-tut {
-    width: 100%;
+.wrapper-video-tut.ios-display {
+    width: 266px;
+    height: 520px;
+    top: 66px;
 }
 
 iframe {
@@ -107,6 +129,21 @@ iframe {
     transform: translateX(-50%);
     width: 321px;
     height: 648px;
+}
+video{
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    /* width: 100%;
+    height: 100%; */
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 313px;
+}
+
+iframe.ios-display {
+    top: -55px;
 }
 
 .modal-body {
@@ -133,6 +170,7 @@ iframe {
     margin-right: 30px;
     display: block;
 }
+
 /* .wrapper-link-ios{
     display: block;
 } */
@@ -585,18 +623,22 @@ ul.list-service li i {
         display: none
     }
 }
-.btn-android-hover, .btn-ios-hover{
+
+.btn-android-hover, .btn-ios-hover {
     opacity: 0;
     visibility: hidden;
 }
-.wrapper-link-android a:hover img.btn-android-hover, .wrapper-link-ios a:hover img.btn-ios-hover{
+
+.wrapper-link-android a:hover img.btn-android-hover, .wrapper-link-ios a:hover img.btn-ios-hover {
     opacity: 1;
     visibility: visible;
 }
-.wrapper-link-android a:hover img.btn-android, .wrapper-link-ios a:hover img.btn-ios{
+
+.wrapper-link-android a:hover img.btn-android, .wrapper-link-ios a:hover img.btn-ios {
     opacity: 0;
     visibility: hidden;
 }
+
 /* responsive */
 
 @media (min-width: 1000px) {
@@ -732,10 +774,10 @@ ul.list-service li i {
     .active {
         color: #ff9f1a
     }
-    .available-android.android-display{
+    .available-android.android-display {
         display: block;
     }
-    .available-ios.ios-display{
+    .available-ios.ios-display {
         display: block;
     }
 }
@@ -795,26 +837,26 @@ ul.list-service li i {
     .circle {
         display: none
     }
-    .qr-wrapper{
+    .qr-wrapper {
         display: none;
     }
-    .wrapper-link-ios.ios-display{
+    .wrapper-link-ios.ios-display {
         display: block;
     }
-    .wrapper-link-android.android-display{
+    .wrapper-link-android.android-display {
         display: block;
         margin-right: 0;
     }
-    .wrapper-link-ios.android-display{
+    .wrapper-link-ios.android-display {
         display: none;
     }
-    .wrapper-link-android.ios-display{
+    .wrapper-link-android.ios-display {
         display: none;
     }
-    .wrapper-link-android.android-display a, .wrapper-link-ios.ios-display a{
+    .wrapper-link-android.android-display a, .wrapper-link-ios.ios-display a {
         width: 280px;
     }
-    .wrapper-link-android.android-display a img.btn-android, .wrapper-link-ios.ios-display a img.btn-ios, .wrapper-link-android.android-display a .btn-android-hover, .wrapper-link-ios.ios-display a .btn-ios-hover{
+    .wrapper-link-android.android-display a img.btn-android, .wrapper-link-ios.ios-display a img.btn-ios, .wrapper-link-android.android-display a .btn-android-hover, .wrapper-link-ios.ios-display a .btn-ios-hover {
         width: 280px!important;
     }
 }
@@ -879,7 +921,7 @@ ul.list-service li i {
         height: 48px;
         margin: 0 auto;
     }
-    .wrapper-link-android.android-display .video-btn, .wrapper-link-ios.ios-display .video-btn{
+    .wrapper-link-android.android-display .video-btn, .wrapper-link-ios.ios-display .video-btn {
         border-radius: 50%!important;
         width: 50px;
         height: 50px;
@@ -895,7 +937,7 @@ ul.list-service li i {
         width: 250px;
         height: 545px;
     } */
-    .modal-body {
+    .modal-body, .modal-body.ios-display {
         width: 225px;
         height: 497px;
     }
@@ -904,11 +946,22 @@ ul.list-service li i {
         height: 412px;
         top: 36px;
     }
-    #source-video {
+    .wrapper-video-tut.ios-display {
+        width: 193px;
+        height: 380px;
+        top: 54px;
+    }
+    video{
+        width: 231px;
+    }
+    iframe.ios-display {
+        top: -47px!important;
+    }
+    /* #source-video {
         width: 234px;
         height: 488px;
         top: -38px;
-    }
+    } */
 }
 
 @media(max-width: 400px) {

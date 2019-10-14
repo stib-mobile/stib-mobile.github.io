@@ -1,9 +1,11 @@
 /* header */
-.img-play-tut{
+
+.img-play-tut {
     width: 20px;
     margin-left: 2px;
     margin-top: 1px;
 }
+
 .available-ios, .available-android {
     display: none;
 }
@@ -134,7 +136,8 @@ iframe {
     width: 321px;
     height: 648px;
 }
-video{
+
+video {
     position: absolute;
     top: 2px;
     left: 50%;
@@ -936,10 +939,12 @@ ul.list-service li i {
         right: -18px;
         top: -33px!important;
     }
-
-.wrapper-link-android.android-display .video-btn img, .wrapper-link-ios.ios-display .video-btn img {
-    width: 24px!important;
-}
+    .wrapper-link-android.android-display .video-btn img, .wrapper-link-ios.ios-display .video-btn img {
+        width: 24px!important;
+    }
+    .video-btn img{
+        width: 24px!important;
+    }
 }
 
 @media(max-width: 435px) {
@@ -964,7 +969,7 @@ ul.list-service li i {
         height: 380px;
         top: 54px;
     }
-    video{
+    video {
         width: 231px;
     }
     iframe.ios-display {
